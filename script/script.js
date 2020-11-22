@@ -13,3 +13,11 @@ let myNick = 'Oleg';
 let myAge = 32;
 let myLogo = 'Be Happy!';
 console.log(myNick + myAge);
+
+/* добавляю константу */
+const userProfile = {
+    name: 'Oleg',
+    age: 32,
+    logo: 'Be Happy!'
+}
+console.log(userProfile);

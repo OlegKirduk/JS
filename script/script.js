@@ -143,3 +143,37 @@ console.log(typeof dellName);
 let userSize = "12" / "4"
 console.log(userSize);
 console.log(typeof userSize);
+
+/*базовые операторы*/
+let x;
+
+//сложение
+x = 5 + 8;
+console.log(`Результат сложения: ${x}`);
+
+//вычитание
+x = 5 - 8;
+console.log(`Результат вычитания: ${x}`);
+
+//умножение
+x = 5 * 8;
+console.log(`Результат умножения: ${x}`);
+
+//деление
+x = 5 / 8;
+console.log(`Результат деления: ${x}`);
+
+//возведение в степень
+x = 5 ** 8;
+console.log(`Результат возведения в степень: ${x}`);
+
+//взятие остатка от деления
+x = 9 % 2;
+console.log(`Результат взятия остатка от деления: ${x}`);
+
+//спец возможности
+let myAdress = "Bachylo " + 4;
+console.log(myAdress);
+console.log(typeof myAdress);
+
+

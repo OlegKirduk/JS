@@ -97,3 +97,49 @@ let funcVariable = function name (parameters) {
     //код функции
 }
 console.log (typeof funcVariable);
+
+/*строковое преобразование типов*/
+let NastyaAge = 28;
+console.log(NastyaAge);
+console.log(typeof NastyaAge);
+
+NastyaAge = String(NastyaAge);
+
+console.log(NastyaAge);
+console.log(typeof NastyaAge);
+
+/*численное преобразование типа*/
+let MassaAge = "28";
+console.log(MassaAge);
+console.log(typeof MassaAge);
+
+MassaAge = Number(MassaAge);
+
+console.log(MassaAge);
+console.log(typeof MassaAge);
+
+/*логическое преобразование*/
+let MomAge = "61";
+console.log(MomAge);
+console.log(typeof MomAge);
+
+MomAge = Boolean (MomAge);
+
+console.log(MomAge);
+console.log(typeof MomAge);
+
+/*домашка*/
+let SasaAge = 33;
+let SasaInfo = `Фрилансер ${SasaAge}`;
+console.log(SasaInfo);
+
+let userHeight = 145 / 0;
+console.log(userHeight);
+
+let dellName;
+console.log(typeof dellName);
+
+
+let userSize = "12" / "4"
+console.log(userSize);
+console.log(typeof userSize);

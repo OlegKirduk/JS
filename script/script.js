@@ -234,4 +234,31 @@ let usersCounter = 0;
 let newUsers = 2 * usersCounter;
 console.log(newUsers);
 
+/*операторы сравнения*/
+console.log(2>1);
+console.log(2<1);
+console.log(2 == 1);
+console.log(2 != 1);
+
+let reesult = 11 > 10;
+console.log(reesult);
+
+console.log('б'>'а'); //алфавитный порядок
+console.log('б'>'Б'); //регистр
+console.log('слайдер'>'слайд'); //кол-во символов
+console.log('скрипт'>'скрипка'); //алфавитный порядок
+
+// сравнение разных типов
+console.log("58" > 10); //преобразование String в число
+console.log("007" == 7); //преобразование String в число
+//НО
+console.log("007" === 7); // так как === оператор строгово равенства и проверяет равенство без приведения типов
+
+//логическое сравнение
+console.log(true == 1);
+console.log(false == 0);
+
+//сравнение null и undefined
+console.log (null !== undefined);
+console.log (null == undefined); //т.к. тут не строгое равенство
 

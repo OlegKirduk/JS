@@ -176,4 +176,62 @@ let myAdress = "Bachylo " + 4;
 console.log(myAdress);
 console.log(typeof myAdress);
 
+//унарный оператор сложения
+let users = "12";
+let admins = "13";
+
+console.log(users + admins);
+
+console.log(+users + +admins);
+console.log(Number(users) + Number(admins));
+
+//оператор присваивания
+let a = 1 + 2;
+let b = 3;
+let result = 8 - (a = b + 4);
+console.log ("Результат в скобках: " + a);
+console.log ("Общий результат: " + result);
+
+//присваивание по цепочке
+let resultTwo
+let resultOne = resultTwo = 1 + 2;
+console.log(resultOne);
+console.log(resultTwo);
+
+//сокращенная запись вычислений с присваиванием
+let usersAny = 5;
+usersAny = usersAny + 3;
+usersAny = usersAny * 2;
+
+let usersAn = 5;
+console.log(usersAn);
+usersAn+= 3;
+console.log(usersAn);
+usersAn *=2;
+console.log(usersAn);
+
+//инкремент
+let child = 1;
+child++;
+console.log(child)
+
+//декремент
+let money = 100;
+money --;
+console.log(money);
+
+//постфиксная форма
+let kitty;
+kitty++;
+kitty--;
+//префискная форма
+++kitty;
+--kitty;
+
+//пример с префиксной формой
+let usersCounter = 0;
+++usersCounter; //будет 1
+let newUsers = 2 * usersCounter;
+console.log(newUsers);
+
 

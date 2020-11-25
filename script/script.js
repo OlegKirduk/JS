@@ -262,3 +262,62 @@ console.log(false == 0);
 console.log (null !== undefined);
 console.log (null == undefined); //т.к. тут не строгое равенство
 
+/*логические операторы - || оператор ИЛИ
+его процесс работы:
+1. вычисляет операнты слева направо
+2. если результат true, останавливается и возвращает исходное значение
+3. если все операнты false, то возвращает значение последнего из них*/
+console.log(true || true); //true
+console.log(true || false); //true
+console.log(false || true); //true
+console.log(false || false); //false
+
+//пример
+console.log(1 || 0); //true это 1
+console.log(undefined || '' || 'Муся' || 0); //true нет совсем, вернет последнее значение - 0
+
+//пример
+let company1 = ''; 
+let company2 = 'Fenox';
+let company = company1 || company2 || "Cosmolac";
+console.log(company);
+
+//еще пример
+let gamers = 0;
+let workers = 5;
+gamers > workers || workers++;
+console.log(workers);
+
+/*логические операторы - && оператор И 
+1. вычисляет операнты слева направо
+2. если результат false, останавливается и возвращает исходное значение
+3. если все операнты true, то возвращает значение последнего из них*/
+console.log(true && true); //true
+console.log(true && false); //false
+console.log(false && true); //false
+console.log(false && false); //false
+
+//примеры
+console.log('music' && 0 && 2 ); //0 - false
+console.log(1 && null && 2); //null - false
+console.log('15' && '42'); //все true
+
+//приоритет && больше чем ||
+console.log(1 && 0 || 2  && 1 );
+
+/*логические операторы - ! оператор НЕ 
+1. сначала приводит аргумент к логическому типу true или false
+2. затем возвращает противоположное значение*/
+console.log(!null); //true
+console.log(!1); //false
+console.log(!''); //true
+console.log(!'cat'); //false
+
+//оператор ! имеет наивысший приоритет
+console.log(!true && 50 || 18 && !1);
+
+/*логические операторы - ?? оператор объединения с null
+оператор ?? возвращает первый аргумент если он не null\undefined, иначе второй */
+let dog;
+console.log(dog ?? 'пёсель');
+

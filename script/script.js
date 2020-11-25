@@ -352,3 +352,49 @@ console.log(!false && 11 || 18 && !''); //true && true || true && true // true
 
 let war = 0;
 console.log(war ?? "Без имени"); //0
+
+/*IF ELSE, синтаксис*/
+
+let message = "Жыве Беларусь!";
+if (2 >1) {
+    console.log(message);
+}
+
+let word = 'Жыве!';
+if (2 + 1 === 3 && "1" ==1 || 10 > 5 && 10 === 1) { /*true && true || true && false, а это значит true || false*/ 
+    console.log(word);  
+}
+
+let Belarus = true;
+let Lukashenko = false;
+let Tichanovskaya = true;
+if (Belarus && Lukashenko || Belarus && Tichanovskaya) {
+    console.log(message);
+}
+
+//если запись короткая - то можно так:
+let logo = 'Жыве!';
+if (2 > 1) console.log(logo);
+
+// блоки else и else if
+let moto = "Привет!";
+let five = 5;
+if (five > 4) {
+    console.log(moto);
+} else {
+    console.log("Hello!");
+}
+
+let letter = 'A';
+let number = 3;
+
+if(number > 50){
+    console.log ('3 больше 50');
+} else if (number > 25) {
+    console.log ('3 больше 25');
+} else if (number > 1) {
+    console.log ('3 больше 1');
+} else {
+    console.log ('условие не выполнено');
+}
+

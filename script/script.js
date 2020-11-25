@@ -321,3 +321,20 @@ console.log(!true && 50 || 18 && !1);
 let dog;
 console.log(dog ?? 'пёсель');
 
+/*домашка*/
+console.log(1 || 5); //1, т.к. оба значения true, то выводит первый из них
+console.log(5 || 1); //5, т.к. оба значения true, то выводит первый из них
+console.log(0 || 1); //1, т.к. первое значение false, а второе true
+console.log(1 || 0); //1, т.к. первое значение true, а второе false
+console.log(0 || 0); //0, т.к. оба значения false, то выводит второе значение 0
+console.log(null || 1); //1 
+console.log(undefined || 1); //1
+
+let MassaNastya;
+console.log(String ('MassaNastya') || 0); //MassaNastya, т.к. string со значением это 1, а значит true
+
+console.log(1 && 5); //1, т.к. оба значения true, то выводит последний из них
+console.log(0 && 1); //0, т.к. первое значение false, а второе true
+console.log(1 && 0); //0, т.к. первое значение true, а второе false
+console.log(undefined && 0); //undefined, т.к. оба значения false, то выводит первое значение
+

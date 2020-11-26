@@ -398,3 +398,25 @@ if(number > 50){
     console.log ('условие не выполнено');
 }
 
+/*условный оператор ?*/
+
+//первый вариант записи
+let greeting = "Hello";
+let greetingEnd;
+
+if (5 > 1) {
+    greetingEnd = ", Oleg!"
+} else {
+    greetingEnd = ", Sasha!"
+}
+
+greeting += greetingEnd;
+console.log(greeting);
+
+//второй вариант записи
+let hello = "Hello";
+
+let helloEnd = (5 > 1) ? ", Oleg!" : ", Sasha!";
+
+hello += helloEnd;
+console.log(hello);

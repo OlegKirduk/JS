@@ -420,3 +420,25 @@ let helloEnd = (5 > 1) ? ", Oleg!" : ", Sasha!";
 
 hello += helloEnd;
 console.log(hello);
+
+/*домашка*/
+if (1 === "1"){ //ложь
+    console.log ('истина');
+} else {
+    console.log ('ложь');
+}
+
+if ( 5== "5"){ //истина
+    console.log ('истина');
+} else {
+    console.log ('ложь');
+}
+
+let answer = (92 > '11' && 58 < 100) ? 'истина' : 'ложь'; 
+console.log (answer);
+
+if (0) {
+    console.log ('ложь');
+} else if (" ") {
+    console.log ('истина');
+}

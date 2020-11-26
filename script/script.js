@@ -442,3 +442,77 @@ if (0) {
 } else if (" ") {
     console.log ('истина');
 }
+
+/*Циклы for и while*/
+
+//цикл while - проверяет условие перед каждой итерацией
+let num = 0;
+while (num < 5){
+    console.log (num);
+    num++;
+}
+
+//пример без {}
+let nu = 5;
+while (nu) console.log (nu--);
+
+//конструкция do...while - проверяет условие после каждой итерации
+let numb = 3;
+do {
+    console.log (numb);
+    numb++;
+} while (numb < 5);
+
+//цикл for ( ; ; )- проверяет условие перед каждой итерацией, есть возможность задать доп настройки
+for (let numbe = 0; numbe < 5; numbe++) {
+    console.log (numbe)
+}
+
+/*
+работа цикла for:
+1. выполняется начало let numbe = 0
+2. выполняется условие numbe < 5
+3. если условие true, то выполняется
+тело цикла console.log (numbe)
+4. выполняется шаг numbe++
+5. повтор начиная с пункта 2
+*/
+
+//но правильно оформлять for
+let numbere;
+for (numbere = 0; numbere < 5; numbere++) {
+    console.log (numbere);
+}
+console.log (`Вывод вне цикла: ${numbere}`);
+
+//можно убрать любую часть цикла
+let numberer = 0;
+for ( ; numberer < 5; ) {
+    console.log (numberer);
+    numberer++;
+}
+
+//директива break
+let nur = 0;
+for (; nur <5; nur++) {
+    console.log (nur);
+    if (nur ==2) break;
+}
+console.log(`Работа завершена, nur= ${nur}`);
+
+//директива continue
+let nure = 0;
+for (; nure <5; nure++) {
+    if (nure ==2) continue;
+    console.log (nure);
+}
+
+//метки
+firstFor: for (let numi = 0; numi < 2; numi++) {
+    for (let size = 0; size < 3; size++) {
+        if (size == 2) {
+            break firstFor;
+        }
+        console.log(size);
+    }
+}

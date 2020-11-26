@@ -516,3 +516,30 @@ firstFor: for (let numi = 0; numi < 2; numi++) {
         console.log(size);
     }
 }
+
+//домашка
+
+//задача 1
+let norm = 1;
+while (norm < 6) {
+    console.log(norm);
+    norm++;
+}
+
+//задача 2 - т.к. 0 - это false, то операция совершаться не будет, а значит и выводится 0 не будет
+let nurm = 8;
+while (nurm) {
+    console.log (nurm);
+    nurm--;
+}
+
+//задача 3
+for (let nba = 0; nba < 3; nba++) {
+    console.log (`Число: ${nba}`);
+}
+
+let nra = 0;
+do {
+    console.log (`Число: ${nra}`);
+    nra++;
+} while (nra < 3);

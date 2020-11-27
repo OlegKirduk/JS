@@ -582,3 +582,37 @@ let procent = parseInt(strPercent);
 sum = sum + sum * procent / 100;
 alert("После начисления процентов сумма вклада составит: " + sum);
 */
+
+/*массивы*/
+ 
+// let myArray = new Array();
+// или проще
+// let myArray = [];
+
+let myFriends = ["Sasha", "Vara", "Sergey"];
+console.log(myFriends);
+console.log(myFriends[0]); //т.к. счет индекса начинается с нуля, т.е. Sasha - 0, Vara - 1, Sergey - 2
+
+let parentsNastya = ["Nadya", "Jura"];
+parentsNastya [2] = "Vadim"; //можно установить элемент, который изначально не установлен
+console.log(parentsNastya);
+
+//spead-оператор ...
+let points = [1, 2, 3, 4];
+console.log(...points);    // и это не массив, а именно отдельные значения
+console.log(points);  
+
+//многомерные массивы
+let myParents = [["Oleg", 60], ["Valya", 64]]
+console.log(myParents[0]);
+console.log("Возраст моей мамы " + myParents[1][1]) //64, т.к. у ["Valya", 64] индекс равен 1, и в нем 64 - тут тоже инжекс равен 1
+
+let enemies = [
+    ["Picachy", 312, "pokemon"],
+    ["Kung Lao", 28, "fighter"],
+    ["Hitler", 59, "nazi"]
+];
+enemies[2][1] = 70;
+let ageHitler = enemies[2][1];
+console.log(ageHitler);
+console.log(enemies[1]);

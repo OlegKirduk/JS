@@ -543,3 +543,42 @@ do {
     console.log (`Число: ${nra}`);
     nra++;
 } while (nra < 3);
+
+/*преобразование данных*/
+
+//parseInt() - преобразование строки в число
+let number1 = "4";
+let number2 = "1";
+let resul = parseInt (number1) + parseInt (number2);
+console.log (resul);
+
+//parseInt() - если смешанное содержимое, то метод все равно пытается преобразовать содержимое
+let number3 = "88Oleg";
+let number4 = parseInt (number3);
+console.log (number4);
+
+//parseFloat() - функция преобразования строк в дробные числа
+let number5 = "3,14";
+let number6 = "99,9";
+let resu = parseFloat(number5) + parseFloat(number6);
+console.log (resu);
+
+//isNaN - функция для определения, является строка числом (если не число - true, иначе - false)
+let number7 = "Oleg14"
+let number8 = isNaN (number7);
+console.log(number8);
+
+//перевод чисел в любую систему (например в двоичную)
+let number9 = "110";
+let resaa = parseInt (number9, 2);
+console.log (resaa); //число 6 в десятичной системе это 110 в двоичной
+
+//пример
+/*
+let strSum = prompt("Введите сумму вклада"); //функция prompt() возвращает строку, поэтому требуется преобразование строки в число
+let strPercent = prompt("Введите процентную ставку");
+let sum = parseInt(strSum);
+let procent = parseInt(strPercent);
+sum = sum + sum * procent / 100;
+alert("После начисления процентов сумма вклада составит: " + sum);
+*/

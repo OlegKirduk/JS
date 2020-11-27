@@ -616,3 +616,48 @@ enemies[2][1] = 70;
 let ageHitler = enemies[2][1];
 console.log(ageHitler);
 console.log(enemies[1]);
+
+/* нюансы-варианты*/
+
+document.write("хочу домой"); //метод document.write() пишет информацию на веб-страницу
+console.log("хочу домой"); //метод console.log() выводит результат в консоль
+
+let income = 500; //Конструкция switch..case является альтернативой использованию 
+switch (income){ //конструкции if..else if..else и также позволяет обработать сразу несколько условий
+    case 100 :
+    console.log("ваш доход равен 100");
+    break; //оператор break, чтобы избежать выполнения других блоков
+    case 200 :
+    console.log("ваш доход равен 200");
+    break;
+    case 500 :
+    console.log("ваш доход равен 500");
+    break;
+    default : //блок default чтоб обработать ситуацию, когда совпадения не будет найдено
+    console.log("ваш доход невозможно посчитать");
+}
+
+let salary = 500; //и все-таки конструкция if... else более распространена
+if (salary == 100) {
+    console.log ("ваш доход равен 100");
+} else if (salary == 200) {
+    console.log ("ваш доход равен 200");
+} else if (salary == 500) {
+    console.log ("ваш доход равен 500");
+}
+
+let k = 1; //тернарная операция
+let l = 2;
+let final = 1 < 2 ? a + b : a - b; //В зависимости от условия возвращает второй или третий операнд: 
+console.log(result);                //если условие равно true, то возвращается второй; если условие false - то третий
+
+/*еще раз про цикл for*/
+let v;
+for (v = 0 ; v < 5 ; v++);
+console.log (v);
+
+//цикл for...in предназначен для перебора массивов и объектов
+let people = ["Tom", "Alice", "Bob", "Sam"];
+for(var index in people){ 
+    console.log(people[index]);
+}
